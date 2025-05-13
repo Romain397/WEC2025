@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  margin: 30px;
+}
+
+.grid.pilotes {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.grid.voitures {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+
+.grid.marques {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+
+.grid.circuit {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+
+.carte {
+  background-color: #fff;
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  padding: 15px;
+  text-align: center;
+}
+
+.carte:hover {
+  transform: scale(1.05);
+}
+
+.carte img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.carte .voiture {
+  width: 280px;
+  height: 362px;
+  margin-bottom: 30px;
+}
+
+.carte.marque {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+.carte.circuit {
+  width: 280px;
+  height: 362px;
+  margin-bottom: 30px;
+}
+
+.carte.voiture img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.carte .marque img,
+.carte .circuit img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.carte .lmp2 img,
+.carte .lmgt3 img,
+.carte .hypercar img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.carte h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #222;
+}
+
+.carte p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #555;
+}
